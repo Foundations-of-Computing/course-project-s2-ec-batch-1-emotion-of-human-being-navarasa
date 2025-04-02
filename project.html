@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html >
 <head>
     
@@ -55,7 +55,7 @@
 
     <h1 class="title">Navarasa - The Nine Emotions</h1>
 
-    <div class="container">
+    <div class="container onclick="checker()">
         <div class="rasa">
             <img src="srik.jpeg" alt="Shringara Rasa">
             <a href="Shringara.html" target="_blank">Shringara Rasa</a>
@@ -101,6 +101,14 @@
             <a href="Shanta.html" target="_blank">Shanta Rasa</a>
         </div>
     </div>
+    <script>
+     function checker() {
+        var result = confirm('Are you sure?');
+        if (result == false) {
+            event.preventDefault();
+        }
+     }
+</script>
 
 </body>
 </html>
